@@ -10,3 +10,5 @@ riscv64-unknown-elf-gdb \
     -ex 'file target/riscv64gc-unknown-none-elf/release/os_ch1' \
     -ex 'set arch riscv:rv64' \
     -ex 'target remote localhost:1234'
+
+rust-objcopy --strip-all target/riscv64gc-unknown-none-elf/release/os-ch1 -O binary target/riscv64gc-unknown-none-elf/release/os_ch1.bin
